@@ -25,19 +25,9 @@ public class Fibo {
                 a1 = a2;
                 a2 = a3;
             }
-            // newline because of printf
+            // newline because printf does not
             System.out.println();
         }
-    }
-
-    public int recur_fibo(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        else if (n == 1) {
-            return 1;
-        }
-        return (recur_fibo(n - 1) + recur_fibo(n - 2));
     }
 }
 
@@ -50,12 +40,5 @@ class Main {
         int n = input.nextInt();
         // fibonacci using loop
         series.loop_fibo(n);
-
-        for (int i = 0; i < n; i++)
-        {   
-            // fibonacci using recursion 
-            System.out.printf("%d ", series.recur_fibo(i));
-        }
-        System.out.println();
     }
 }
