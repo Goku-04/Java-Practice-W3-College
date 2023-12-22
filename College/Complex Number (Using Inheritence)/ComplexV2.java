@@ -42,7 +42,8 @@ class Main {
         System.out.println("The second complex number is: " + b);
 
         // store results
-        Complex res1 = a.add(b);
+        // ComplexV2 res1 = a.add(b); [this will raise issue since Complex cannot be converted to ComplexV2]
+        Complex res1 = a.add(b); 
         ComplexV2 res2 = a.sub(b);
 
         // print results
